@@ -1,0 +1,51 @@
+body {
+    background-color: #EEF9BF;
+
+}
+header {
+  width: auto;
+  display: flex;
+    justify-content: center;
+}
+.top {
+    width: 540px;
+    height: 63px;
+    margin-top: 40px;
+    margin-bottom: 47px;
+
+    
+}
+h1 {
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    text-align: left;
+
+    color: #75B79E;
+    
+}
+.content {
+    margin-left: 122px;
+    margin-right: 116px;
+    display: flex;
+
+}
+.card {
+    width: 117px;
+    height: 146px;
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+   
+}
+.front {
+    background-image: url("/image/front.png");
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
