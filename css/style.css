@@ -22,7 +22,7 @@ h1 {
     font-weight: 700;
     line-height: 66px;
     letter-spacing: -0.004em;
-    text-align: left;
+    text-align: center;
 
     color: #75B79E; 
     
@@ -45,12 +45,15 @@ h1 {
     border-radius: 5px;
 
     margin: 34px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.front {
-    background-image: url("/image/front.png");
-    background-position: center;
-    background-size: 100px;
-    background-repeat: no-repeat;
+.parrot  {
+    width: 100px;
+}
+
 }
 @media screen and  (max-width: 335px) {
    
