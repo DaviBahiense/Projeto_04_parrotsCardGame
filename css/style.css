@@ -29,8 +29,7 @@ h1 {
 }
 .content {
     width: auto;
-    margin-left: 122px;
-    margin-right: 122px;
+    gap: 45px;
     
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +78,7 @@ h1 {
     width: 100px;
 }
 .gif {
-    width: 100px;
+    
 }
 
 @media screen and  (max-width: 335px) {
