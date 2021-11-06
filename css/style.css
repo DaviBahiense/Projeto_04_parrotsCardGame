@@ -36,9 +36,16 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .card {
     width: 117px;
     height: 146px;
+    position: relative;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
     background: #A7E9AF;
     border: 1px solid #99CEA8;
     box-sizing: border-box;
@@ -49,12 +56,32 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
 }
+
+.back-face {
+    transform: rotateY(180deg);
+}
+
+.card-select .back-face {
+    transform: rotateY(0deg);
+}
+
+.card-select .front-face {
+    transform: rotateY(-180deg);
+}
+
 .parrot  {
     width: 100px;
 }
-
+.gif {
+    width: 100px;
 }
+
 @media screen and  (max-width: 335px) {
    
     header {

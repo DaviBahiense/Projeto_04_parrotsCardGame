@@ -8,4 +8,9 @@ function pedirPar ()  {
     }
     
 }
-pedirPar()
+//pedirPar()
+
+function turn(button) {
+    button.classList.toggle("card-select")
+}
+
