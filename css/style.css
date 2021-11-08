@@ -66,11 +66,19 @@ h1 {
     transform: rotateY(180deg);
 }
 
-.card-select .back-face {
+/* .card-select .back-face {
     transform: rotateY(0deg);
 }
 
 .card-select .front-face {
+    transform: rotateY(-180deg);
+} */
+
+.card-selected-back{
+    transform: rotateY(0deg);
+}
+
+.card-selected-front{
     transform: rotateY(-180deg);
 }
 
