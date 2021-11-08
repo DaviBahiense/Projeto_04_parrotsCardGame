@@ -5,10 +5,10 @@ let arrayCard = [
 ]
 
 let counter = 1;
-let attempt1;
-let attempt2;
-let attempt1f;
-let attempt2f;
+let play1;
+let play2;
+let play1f;
+let play2f;
 
 let counterPlay = 0;
 
@@ -49,25 +49,25 @@ function game_card_select(card_game) {
     const turn_down = card_game.querySelector(".back-face");
     const turn_down2 = card_game.querySelector(".front-face");
 
-    turn_down.classList.add("card-selected-back");
-    turn_down2.classList.add("card-selected-front");
+    turn_down.classList.add("selected-back");
+    turn_down2.classList.add("selected-front");
 
     counterPlay = counterPlay + 1
 
     if(counter === 1){
-        attempt1 = card_game.querySelector(".back-face");
-        attempt1f = card_game.querySelector(".front-face");
+        play1 = card_game.querySelector(".back-face");
+        play1f = card_game.querySelector(".front-face");
         counter++;
     }else if(counter === 2){
-        attempt2 = card_game.querySelector(".back-face");
-        attempt2f = card_game.querySelector(".front-face");
+        play2 = card_game.querySelector(".back-face");
+        play2f = card_game.querySelector(".front-face");
 
-        if(attempt1.innerHTML === attempt2.innerHTML){
-            attempt1.classList.add("card-selected-back");
-            attempt1f.classList.add("card-selected-front");
+        if(play1.innerHTML === play2.innerHTML){
+            play1.classList.add("selected-back");
+            play1f.classList.add("selected-front");
 
-            attempt2.classList.add("card-selected-back");
-            attempt2f.classList.add("card-selected-front");
+            play2.classList.add("selected-back");
+            play2f.classList.add("selected-front");
             
         }else{
 
@@ -77,28 +77,28 @@ function game_card_select(card_game) {
         setTimeout(reset_counter, 1000);
     }
 
-    setTimeout(endGame,1000);
+    setTimeout(endGame, 1000);
 }
 
 function turn_up() {
-    attempt1.classList.remove("card-selected-back");
-    attempt1f.classList.remove("card-selected-front");
+    play1.classList.remove("selected-back");
+    play1f.classList.remove("selected-front");
 
-    attempt2.classList.remove("card-selected-back");
-    attempt2f.classList.remove("card-selected-front");
+    play2.classList.remove("selected-back");
+    play2f.classList.remove("selected-front");
 }
 
 function reset_counter() {
     counter = 1;
-    attempt1 = 0;
-    attempt2 = 0;
-    attempt1f = 0;
-    attempt2f = 0;
+    play1 = 0;
+    play2 = 0;
+    play1f = 0;
+    play2f = 0;
 }
 
 function endGame() {
     
-    let searchClass = document.querySelectorAll(".card-selected-back");
+    let searchClass = document.querySelectorAll(".selected-back");
 
     if (searchClass.length === qtdCard){
         alert(`Você ganhou em ${counterPlay} jogadas`);
